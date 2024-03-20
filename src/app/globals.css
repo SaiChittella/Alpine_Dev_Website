@@ -13,7 +13,7 @@
 
 body {
 	color: white; /* Set default text color to black */
-	background-color: #070b07; /* Set background color to white */
+	background-color: #070B07; /* Set background color to white */
 	overflow-x: hidden;
 	font-family: "Inter";
 }
@@ -76,4 +76,8 @@ body {
 	letter-spacing: var(--headlineMedium);
 	font-size: var(--headlineMedium);
 	text-transform: uppercase;
+}
+
+html {
+	@apply text-primaryText
 }

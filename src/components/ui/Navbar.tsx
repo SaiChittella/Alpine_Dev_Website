@@ -2,10 +2,8 @@
 import React, { useState } from "react";
 
 const NavBar: React.FC = () => {
-	// State to track the current active tab
 	const [activeTab, setActiveTab] = useState<string>("home");
 
-	// Function to handle tab change
 	const handleTabChange = (tab: string) => {
 		setActiveTab(tab);
 	};

@@ -13,71 +13,16 @@
 
 body {
 	color: white; /* Set default text color to black */
-	background-color: #070B07; /* Set background color to white */
+	background-color: #070b07; /* Set background color to white */
 	overflow-x: hidden;
 	font-family: "Inter";
 }
 
 @keyframes glow-animation {
 	0% {
-		box-shadow: 0 0 10px #45a93c;
+		box-shadow: 0 0 300px 25px #21371F;
 	}
 	100% {
-		box-shadow: 0 0 20px #45a93c;
+		box-shadow: 0 0 300px 70px #21371F;
 	}
-}
-
-.btn-contact {
-	margin-top: 20px;
-	padding: 10px 20px;
-	font-size: 20px;
-	color: #419f39;
-	background-color: transparent;
-	border: 2px solid;
-	border-radius: 20px;
-	text-decoration: none;
-	transition: all 0.3s ease;
-}
-
-.btn-contact:hover {
-	background-color: #1e1e1e;
-	color: #11ff00;
-}
-
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
-}
-
-.scroll-section-outer {
-	overflow: hidden;
-}
-
-.scroll-section-inner {
-	height: 100vh;
-	width: 1000vh;
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	padding-left: 3000px;
-}
-
-.scroll-section {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.scroll-section h3 {
-	color: var(--primaryTextColor);
-	letter-spacing: var(--headlineMedium);
-	font-size: var(--headlineMedium);
-	text-transform: uppercase;
-}
-
-html {
-	@apply text-primaryText
 }

@@ -8,6 +8,13 @@ const NavBar: React.FC = () => {
 		setActiveTab(tab);
 	};
 
+	const scroll = (id:string) => {
+		const missionSection = document.getElementById(id);
+		if (missionSection) {
+			missionSection.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<nav
 			className="fixed flex justify-between items-center px-10 py-3 w-full"
@@ -19,7 +26,10 @@ const NavBar: React.FC = () => {
 					className={`font-bold text-lg px-16 ${
 						activeTab === "home" ? "text-green-400" : ""
 					}`}
-					onClick={() => handleTabChange("home")}
+					onClick={() => {
+						handleTabChange("home");
+						scroll("home");
+					}}
 				>
 					Alpine Dev
 				</a>
@@ -31,7 +41,10 @@ const NavBar: React.FC = () => {
 					className={`nav-item ${
 						activeTab === "mission" ? "text-green-400" : ""
 					}`}
-					onClick={() => handleTabChange("mission")}
+					onClick={() => {
+						handleTabChange("mission");
+						scroll("mission");
+					}}
 				>
 					Mission
 				</a>
@@ -40,7 +53,10 @@ const NavBar: React.FC = () => {
 					className={`nav-item ${
 						activeTab === "about" ? "text-green-400" : ""
 					}`}
-					onClick={() => handleTabChange("about")}
+					onClick={() => {
+						handleTabChange("about");
+						scroll("about");
+					}}
 				>
 					About Us
 				</a>
@@ -49,7 +65,10 @@ const NavBar: React.FC = () => {
 					className={`nav-item ${
 						activeTab === "projects" ? "text-green-400" : ""
 					}`}
-					onClick={() => handleTabChange("projects")}
+					onClick={() => {
+						handleTabChange("projects");
+						scroll("projects");
+					}}
 				>
 					Projects
 				</a>

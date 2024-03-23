@@ -1,40 +1,23 @@
-import Image from "next/image";
-import Navbar from "@/components/ui/Navbar";
-
 export default function Home() {
 	return (
-		<div>
-			<Navbar />
-			<div className="flex flex-col items-center justify-center h-screen">
-				<p className="text-5xl text-center mb-4 font-bold">
-					Reaching new heights with a
-				</p>
-				<div className="text-center mb-4">
-					<p className="text-6xl font-bold">
-						<span className="bg-gradient-to-r from-green-400 to-green-500 text-transparent bg-clip-text">
-							website
-						</span>
-						&nbsp;
-						<span className="bg-gradient-to-r from-green-500 to-green-500 text-transparent bg-clip-text">
-							for
-						</span>
-						&nbsp;
-						<span className="bg-gradient-to-r from-green-500 to-green-600 text-transparent bg-clip-text">
-							you
-						</span>
-					</p>
-				</div>
+		<div className="grid grid-rows-3 h-screen">
 
-				<a
-					href="#contact"
-					className="btn-contact bg-green-500 font-bold relative overflow-hidden"
+			{/* Title */}
+			<div className="row-start-2 text-center text-H1 leading-tight ">
+				<span className="font-medium">Reaching new heights with a</span>
+				<span className="block font-extrabold bg-gradient-to-r from-[#126F4C] to-[#9CD298] text-transparent bg-clip-text">
+					website for you
+				</span>
+			</div>
+
+			{/* Button */}
+			<div className="row-start-3 text-center">
+				<a href="#contact" className="py-2 px-5 bg-[#3A6436] rounded-full text-H4 font-light"
 					style={{
 						animation:
-							"glow-animation 1.5s ease-in-out infinite alternate",
-					}}
-				>
-					<span className="glow absolute inset-0"></span>
-					<span className="relative z-10">Contact Us</span>
+							"glow-animation 2s ease-out infinite alternate",
+					}}>
+					Contact Us
 				</a>
 			</div>
 

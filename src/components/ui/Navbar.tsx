@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
 		setActiveTab(tab);
 	};
 
-	const scroll = (id:string) => {
+	const scroll = (id: string) => {
 		const missionSection = document.getElementById(id);
 		if (missionSection) {
 			missionSection.scrollIntoView({ behavior: "smooth" });

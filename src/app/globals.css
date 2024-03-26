@@ -20,9 +20,14 @@ body {
 
 @keyframes glow-animation {
 	0% {
-		box-shadow: 0 0 300px 25px #21371F;
+		box-shadow: 0 0 300px 25px #21371f;
 	}
 	100% {
-		box-shadow: 0 0 300px 70px #21371F;
+		box-shadow: 0 0 300px 70px #21371f;
 	}
+}
+
+.underline-green {
+	text-decoration: underline;
+	text-decoration-color: #27c188;
 }

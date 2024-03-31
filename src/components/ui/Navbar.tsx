@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const NavBar: React.FC = () => {
@@ -36,8 +37,8 @@ const NavBar: React.FC = () => {
 			</div>
 
 			<div className="flex items-center space-x-20 pr-10">
-				<a
-					href="/#mission"
+				<Link
+					href="/mission"
 					className={`nav-item ${
 						activeTab === "mission" ? "text-green-400" : ""
 					}`}
@@ -47,9 +48,10 @@ const NavBar: React.FC = () => {
 					}}
 				>
 					Mission
-				</a>
+				</Link>
+				
 				<a
-					href="/#about"
+					href="/about"
 					className={`nav-item ${
 						activeTab === "about" ? "text-green-400" : ""
 					}`}
@@ -61,7 +63,7 @@ const NavBar: React.FC = () => {
 					About Us
 				</a>
 				<a
-					href="/#projects"
+					href="/projects"
 					className={`nav-item ${
 						activeTab === "projects" ? "text-green-400" : ""
 					}`}

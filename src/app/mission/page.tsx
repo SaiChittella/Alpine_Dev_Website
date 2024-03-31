@@ -74,7 +74,7 @@ export default function Mission() {
 					width=""
 					name="border-l border-dashed absolute"
 				/>
-				<div
+				{/* <div
 					className="h-0 w-0 border-x-8 border-x-transparent border-b-[16px] border-b-green-600"
 					style={{
 						position: "absolute",
@@ -82,7 +82,7 @@ export default function Mission() {
 						left: "76.45%",
 						transform: "rotate(180deg)",
 					}}
-				></div>
+				></div> */}
 
 				<div
 					className="flex"
@@ -134,7 +134,7 @@ export default function Mission() {
 					width="84.5vh"
 					name="border-l border-dashed absolute"
 				/>
-				<div
+				{/* <div
 					className="h-0 w-0 border-x-8 border-x-transparent border-b-[16px] border-b-green-600"
 					style={{
 						position: "absolute",
@@ -142,7 +142,7 @@ export default function Mission() {
 						left: "24.5%",
 						transform: "rotate(180deg)",
 					}}
-				></div>
+				></div> */}
 
 				<div
 					className="flex"

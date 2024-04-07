@@ -1,3 +1,8 @@
+"use client";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useEffect, useRef } from "react";
+
 import Info from "@/components/Information";
 import VerticalLine from "@/components/Vertical";
 
@@ -8,6 +13,87 @@ export default function Mission() {
 		"https://res.cloudinary.com/vistaprint/image/upload/c_scale,w_448,h_210,dpr_2/f_auto,q_auto/v1701191153/ideas-and-advice-prod/blogadmin/Web-Design.png?_i=AA";
 
 	const code_img = "/imgs/code_img.jpg";
+
+	useEffect(() => {
+		gsap.fromTo(
+			".left-content",
+			{ x: -1000, opacity: 0.5 },
+			{ x: -320, opacity: 1, duration: 2 }
+		);
+		gsap.fromTo(
+			".right-content",
+			{ x: 1000, opacity: 0.5 },
+			{ x: 0, opacity: 1, duration: 2 }
+		);
+	}, []);
+
+	useEffect(() => {
+		gsap.registerPlugin(ScrollTrigger);
+
+		gsap.fromTo(
+			".content-left-fade",
+			{ x: -1000, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".content-left-fade",
+					start: "top bottom", // Adjust the start position as needed
+					end: "center center", // Adjust the end position as needed
+					scrub: true, // Smooth animation while scrolling
+				},
+			}
+		);
+		gsap.fromTo(
+			".content-left-fade-2",
+			{ x: -1000, opacity: 0 },
+			{
+				x: 5,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".content-left-fade-2",
+					start: "top bottom", // Adjust the start position as needed
+					end: "center center", // Adjust the end position as needed
+					scrub: true, // Smooth animation while scrolling
+				},
+			}
+		);
+
+		gsap.fromTo(
+			".content-right-fade",
+			{ x: 1000, opacity: 0 },
+			{
+				x: 0,
+				opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".content-right-fade",
+					start: "top bottom", // Adjust the start position as needed
+					end: "center center", // Adjust the end position as needed
+					scrub: true, // Smooth animation while scrolling
+				},
+			}
+		);
+
+		gsap.fromTo(
+			".content-right-fade-2",
+			{ x: 1000 },
+			{
+				x: 0,
+				// opacity: 1,
+				duration: 2,
+				scrollTrigger: {
+					trigger: ".content-right-fade-2",
+					start: "top bottom", // Adjust the start position as needed
+					end: "center center", // Adjust the end position as needed
+					scrub: true, // Smooth animation while scrolling
+				},
+			}
+		);
+	}, []);
+
 	return (
 		<div>
 			<div>
@@ -25,7 +111,7 @@ export default function Mission() {
 					Our Process
 				</p>
 				<div
-					className="flex"
+					className="flex left-content"
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 4)",
@@ -38,7 +124,7 @@ export default function Mission() {
 						description="To understand client needs, we take this very seriously. To ensure that our clients are getting exactly what they want and deserve, we will either set up a meeting via Zoom, or shoot them an email, where we will take diligent notes on exactly what it is that they want in their website."
 					/>
 				</div>
-				<div>
+				<div className="right-content">
 					<img
 						src={client_needs_img}
 						alt=""
@@ -75,7 +161,7 @@ export default function Mission() {
 					name="border-l border-dashed absolute"
 				/>
 				<div
-					className="flex"
+					className="content-right-fade"
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.74)",
@@ -90,6 +176,7 @@ export default function Mission() {
 
 				<div>
 					<img
+						className="content-left-fade"
 						src={web_design_img}
 						alt=""
 						style={{
@@ -126,11 +213,11 @@ export default function Mission() {
 				/>
 
 				<div
-					className="flex"
+					className="flex content-left-fade-2"
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.445)",
-						left: "4%",
+						left: "10%",
 					}}
 				>
 					<Info
@@ -141,12 +228,13 @@ export default function Mission() {
 
 				<div>
 					<img
+						className="content-right-fade-2"
 						src={code_img}
 						alt=""
 						style={{
 							position: "absolute",
 							top: "calc(100vh / 0.478)",
-							left: "73%",
+							left: "68%",
 							transform: "translateX(-50%)",
 							height: "500px",
 							width: "700px",

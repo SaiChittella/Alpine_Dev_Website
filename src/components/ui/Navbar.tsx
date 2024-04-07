@@ -34,6 +34,15 @@ const NavBar: React.FC = () => {
 				>
 					Alpine Dev
 				</a>
+				<img
+					src="/imgs/logo.png"
+					alt=""
+					className="absolute h-5 w-10"
+					style={{
+						top: "16.5px",
+						left: "56px",
+					}}
+				/>
 			</div>
 
 			<div className="flex items-center space-x-20 pr-10">
@@ -49,7 +58,7 @@ const NavBar: React.FC = () => {
 				>
 					Mission
 				</Link>
-				
+
 				<a
 					href="/about"
 					className={`nav-item ${

@@ -7,12 +7,10 @@ import Info from "@/components/Information";
 import VerticalLine from "@/components/Vertical";
 
 export default function Mission() {
-	const client_needs_img =
-		"https://media1.thehungryjpeg.com/thumbs2/ori_3846780_ihbghfsm731a8wm06ry3k6dmno06mg6rldn8r8i7_understanding-client-requirements-concept-icon.jpg";
-	const web_design_img =
-		"https://res.cloudinary.com/vistaprint/image/upload/c_scale,w_448,h_210,dpr_2/f_auto,q_auto/v1701191153/ideas-and-advice-prod/blogadmin/Web-Design.png?_i=AA";
+	const client_needs_img = "/imgs/client_needs.png";
+	const web_design_img = "/imgs/design.png";
 
-	const code_img = "/imgs/code_img.jpg";
+	const code_img = "/imgs/build.png";
 
 	useEffect(() => {
 		gsap.fromTo(
@@ -133,7 +131,7 @@ export default function Mission() {
 							top: "calc(100vh / 4)",
 							left: "75%",
 							transform: "translateX(-50%)",
-							height: "550px",
+							height: "500px",
 							width: "550px",
 						}}
 					/>
@@ -182,10 +180,11 @@ export default function Mission() {
 						style={{
 							position: "absolute",
 							top: "calc(100vh / 0.87)",
-							left: "27%",
+							left: "25%",
 							transform: "translateX(-50%)",
 							height: "500px",
-							width: "700px",
+							width: "550px",
+							borderRadius: "2%",
 						}}
 					/>
 				</div>
@@ -233,11 +232,11 @@ export default function Mission() {
 						alt=""
 						style={{
 							position: "absolute",
-							top: "calc(100vh / 0.478)",
-							left: "68%",
+							top: "calc(100vh / 0.48)",
+							left: "70%",
 							transform: "translateX(-50%)",
 							height: "500px",
-							width: "700px",
+							width: "500px",
 						}}
 					/>
 				</div>

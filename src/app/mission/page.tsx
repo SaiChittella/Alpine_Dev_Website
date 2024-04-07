@@ -1,7 +1,7 @@
 "use client";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
 import Info from "@/components/Information";
 import VerticalLine from "@/components/Vertical";
@@ -39,9 +39,9 @@ export default function Mission() {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-left-fade",
-					start: "top bottom", // Adjust the start position as needed
-					end: "center center", // Adjust the end position as needed
-					scrub: true, // Smooth animation while scrolling
+					start: "top bottom",
+					end: "center center",
+					scrub: true,
 				},
 			}
 		);
@@ -54,9 +54,9 @@ export default function Mission() {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-left-fade-2",
-					start: "top bottom", // Adjust the start position as needed
-					end: "center center", // Adjust the end position as needed
-					scrub: true, // Smooth animation while scrolling
+					start: "top bottom",
+					end: "center center",
+					scrub: true,
 				},
 			}
 		);
@@ -70,9 +70,9 @@ export default function Mission() {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-right-fade",
-					start: "top bottom", // Adjust the start position as needed
-					end: "center center", // Adjust the end position as needed
-					scrub: true, // Smooth animation while scrolling
+					start: "top bottom",
+					end: "center center",
+					scrub: true,
 				},
 			}
 		);
@@ -82,13 +82,13 @@ export default function Mission() {
 			{ x: 1000 },
 			{
 				x: 0,
-				// opacity: 1,
+				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-right-fade-2",
-					start: "top bottom", // Adjust the start position as needed
-					end: "center center", // Adjust the end position as needed
-					scrub: true, // Smooth animation while scrolling
+					start: "top bottom",
+					end: "center center",
+					scrub: true,
 				},
 			}
 		);
@@ -170,7 +170,7 @@ export default function Mission() {
 				>
 					<Info
 						title="Design Ideas"
-						description="To understand client needs, we take this very seriously. To ensure that our clients are getting exactly what they want and deserve, we will either set up a meeting via Zoom, or shoot them an email, where we will take diligent notes on exactly what it is that they want in their website."
+						description="Now comes the most important part, the designing process. We will take the notes that we have gathered from the client and start designing the website. We will send the client a few designs to choose from, and once they have chosen one, we will start building the website."
 					/>
 				</div>
 
@@ -222,7 +222,7 @@ export default function Mission() {
 				>
 					<Info
 						title="Build"
-						description="To understand client needs, we take this very seriously. To ensure that our clients are getting exactly what they want and deserve, we will either set up a meeting via Zoom, or shoot them an email, where we will take diligent notes on exactly what it is that they want in their website."
+						description="Now, we build. Using our design plan and the popular frameworks Next.JS and TailwindCSS, we will build the website. We will send the client updates on the website as we build it, and once it is finished, we will send them the final product, where they can request any changes that they would like."
 					/>
 				</div>
 

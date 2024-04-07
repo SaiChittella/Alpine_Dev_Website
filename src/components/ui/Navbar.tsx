@@ -56,7 +56,7 @@ const NavBar: React.FC = () => {
 						scroll("mission");
 					}}
 				>
-					Mission
+					Process
 				</Link>
 
 				<a

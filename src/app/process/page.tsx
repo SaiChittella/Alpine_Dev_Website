@@ -99,7 +99,7 @@ export default function Mission() {
 					className="max-w-full text-center font-bold"
 					style={{
 						color: "#1CB47C",
-						fontSize: "48px",
+						fontSize: "74px",
 						position: "absolute",
 						top: "calc(100vh / 12)",
 						left: "50%",

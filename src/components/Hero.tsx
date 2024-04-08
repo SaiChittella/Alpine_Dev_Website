@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Hero() {
 	return (
 		<div className="grid grid-rows-3 h-screen">
@@ -11,16 +13,16 @@ export default function Hero() {
 
 			{/* Button */}
 			<div className="row-start-3 text-center">
-				<a
-					href="#contact"
+				<Link
+					href="/contact"
 					className="py-2 px-5 bg-[#3A6436] rounded-full text-H4 font-light"
 					style={{
 						animation:
-							"glow-animation 2s ease-out infinite alternate",
+							"glow-animation 2s ease-out infinite alternate",	
 					}}
 				>
 					Contact Us
-				</a>
+				</Link>
 			</div>
 		</div>
 	);

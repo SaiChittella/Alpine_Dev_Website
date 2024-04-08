@@ -47,19 +47,30 @@ const NavBar: React.FC = () => {
 
 			<div className="flex items-center space-x-20 pr-10">
 				<Link
+					href="/process"
+					className={`nav-item ${
+						activeTab === "process" ? "text-green-400" : ""
+					}`}
+					onClick={() => {
+						handleTabChange("process");
+					}}
+				>
+					Process
+				</Link>
+
+				<Link
 					href="/mission"
 					className={`nav-item ${
 						activeTab === "mission" ? "text-green-400" : ""
 					}`}
 					onClick={() => {
 						handleTabChange("mission");
-						scroll("mission");
 					}}
 				>
-					Process
+					Mission
 				</Link>
 
-				<a
+				<Link
 					href="/about"
 					className={`nav-item ${
 						activeTab === "about" ? "text-green-400" : ""
@@ -70,8 +81,8 @@ const NavBar: React.FC = () => {
 					}}
 				>
 					About Us
-				</a>
-				<a
+				</Link>
+				<Link
 					href="/projects"
 					className={`nav-item ${
 						activeTab === "projects" ? "text-green-400" : ""
@@ -82,7 +93,7 @@ const NavBar: React.FC = () => {
 					}}
 				>
 					Projects
-				</a>
+				</Link>
 			</div>
 		</nav>
 	);

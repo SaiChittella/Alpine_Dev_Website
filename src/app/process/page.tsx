@@ -216,7 +216,7 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.445)",
-						left: "10%",
+						left: "11%",
 					}}
 				>
 					<Info

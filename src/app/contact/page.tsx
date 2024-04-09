@@ -1,7 +1,6 @@
 "use client";
 import Textbox from "@/components/Textbox";
-import { validateHeaderValue } from "http";
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function ContactUs() {
 	const [name, setName] = useState("");
@@ -22,28 +21,27 @@ export default function ContactUs() {
 	};
 
 	const handleSubmit = () => {
-		// We will need to change this; this is just a placeholder for right now, we need to make it so that it takes all this data and then sends it to like our email or something
-		console.log("Submitted!", name, email, message);
+		// This is just a placeholder, we will need to change this so that it acc sends emails to our email
+		alert("Submitted!" + name + email + message);
 	};
 
 	return (
-		<div>
-			<div className="max-w-full text-center">
+		<div className="">
+			<div className="flex-grow max-w-full text-center text-[13px] sm:text-[15px] md:text-[17px] xl:text-[19px]">
 				<p
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 11.3)",
-						left: "44%",
-						fontSize: "19px",
+						left: "50%",
+						transform: "translateX(-50%)",
 					}}
 				>
 					Level up your brand!
 				</p>
 				<p
-					className="font-bold"
+					className="font-bold text-[45px] sm:text-[50px] md:text-[53px] xl:text-[56px]"
 					style={{
 						color: "#1CB47C",
-						fontSize: "56px",
 						position: "absolute",
 						top: "calc(100vh / 10)",
 						left: "50%",
@@ -54,51 +52,54 @@ export default function ContactUs() {
 				</p>
 			</div>
 			<div
-				className="absolute bg-[#152115]"
+				className="absolute bg-[#152115] w-3/5 mx-auto h-2/3"
 				style={{
-					width: "800px",
-					height: "570px",
 					top: "calc(100vh / 3.5)",
-					left: "42%",
+					left: "67%",
+					transform: "translateX(-50%)",
 					borderRadius: "3%",
 				}}
 			/>
-			<Textbox
-				divTop="calc(100vh / 3.2)"
-				divLeft="4%"
-				inputText="Name"
-				placeHolder="Your Name"
-				inputWidth="400px"
-				inputHeight="50px"
-				value={name}
-				onChange={handleNameChange}
-			/>
-			<Textbox
-				divTop="calc(100vh / 2.25)"
-				divLeft="4%"
-				inputText="Email"
-				placeHolder="you@company.com"
-				inputWidth="400px"
-				inputHeight="50px"
-				value={email}
-				onChange={handleEmailChange}
-			/>
-			<Textbox
-				divTop="calc(100vh / 1.75)"
-				divLeft="4%"
-				inputText="How can we help?"
-				placeHolder="Tell us about the project..."
-				inputWidth="400px"
-				inputHeight="227px"
-				value={message}
-				onChange={handleMessageChange}
-			/>
+			<div className="max-w-full">
+				<Textbox
+					divTop="calc(100vh / 3.2)"
+					divLeft="4%"
+					inputText="Name"
+					placeHolder="Your Name"
+					inputWidth="30vw"
+					inputHeight="5.5vh"
+					value={name}
+					onChange={handleNameChange}
+				/>
+				<Textbox
+					divTop="calc(100vh / 2.25)"
+					divLeft="4%"
+					inputText="Email"
+					placeHolder="you@company.com"
+					inputWidth="30vw"
+					inputHeight="5.5vh"
+					value={email}
+					onChange={handleEmailChange}
+				/>
+				<Textbox
+					divTop="calc(100vh / 1.75)"
+					divLeft="4%"
+					inputText="How can we help?"
+					placeHolder="Tell us about the project..."
+					inputWidth="30vw"
+					inputHeight="26vh"
+					value={message}
+					onChange={handleMessageChange}
+				/>
+			</div>
+
 			<div
 				style={{
 					position: "absolute",
 					top: "calc(100vh / 1.13)",
 					left: "4%",
 					fontSize: "15px",
+					width: "30vw",
 				}}
 			>
 				<p>
@@ -113,7 +114,7 @@ export default function ContactUs() {
 				onClick={handleSubmit}
 				style={{
 					position: "absolute",
-					top: "calc(100vh / 1.08)",
+					top: "94vh",
 					left: "4%",
 					fontSize: "18px",
 				}}

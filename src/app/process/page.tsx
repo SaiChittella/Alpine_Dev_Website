@@ -9,14 +9,13 @@ import VerticalLine from "@/components/Vertical";
 export default function Mission() {
 	const client_needs_img = "/imgs/client_needs.png";
 	const web_design_img = "/imgs/design.png";
-
 	const code_img = "/imgs/build.png";
 
 	useEffect(() => {
 		gsap.fromTo(
 			".left-content",
 			{ x: -1000, opacity: 0.5 },
-			{ x: -320, opacity: 1, duration: 2 }
+			{ x: -350, opacity: 1, duration: 2 }
 		);
 		gsap.fromTo(
 			".right-content",
@@ -95,26 +94,27 @@ export default function Mission() {
 	return (
 		<div>
 			<div>
-				<p
-					className="max-w-full text-center font-bold"
-					style={{
-						color: "#1CB47C",
-						fontSize: "74px",
-						position: "absolute",
-						top: "calc(100vh / 12)",
-						left: "50%",
-						transform: "translateX(-50%)",
-					}}
-				>
-					Our Process
-				</p>
+				<div className="processTitle">
+					<p
+						className="max-w-full text-center font-bold text-[40px] sm:text-[50px] md:text-[65px] xl:text-[75px]"
+						style={{
+							color: "#1CB47C",
+							position: "absolute",
+							top: "calc(100vh / 12)",
+							left: "50%",
+							transform: "translateX(-50%)",
+						}}
+					>
+						Our Process
+					</p>
+				</div>
 				<div
 					className="flex left-content"
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 4)",
 						left: "27%",
-						transform: "translateX(-50%)",
+						maxWidth: "50%",
 					}}
 				>
 					<Info
@@ -122,17 +122,16 @@ export default function Mission() {
 						description="To understand client needs, we take this very seriously. To ensure that our clients are getting exactly what they want and deserve, we will either set up a meeting via Zoom, or shoot them an email, where we will take diligent notes on exactly what it is that they want in their website."
 					/>
 				</div>
-				<div className="right-content">
+				<div className="right-content items-center">
 					<img
 						src={client_needs_img}
-						alt=""
 						style={{
 							position: "absolute",
-							top: "calc(100vh / 4)",
+							top: "calc(100vh / 4.5)",
 							left: "75%",
 							transform: "translateX(-50%)",
-							height: "500px",
 							width: "550px",
+							maxWidth: "40%",
 						}}
 					/>
 				</div>
@@ -163,7 +162,7 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.74)",
-						left: "55%",
+						left: "52%",
 					}}
 				>
 					<Info
@@ -182,9 +181,8 @@ export default function Mission() {
 							top: "calc(100vh / 0.87)",
 							left: "25%",
 							transform: "translateX(-50%)",
-							height: "500px",
 							width: "550px",
-							borderRadius: "2%",
+							maxWidth: "40%",
 						}}
 					/>
 				</div>
@@ -216,7 +214,8 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.445)",
-						left: "11%",
+						left: "5%",
+						maxWidth: "50%",
 					}}
 				>
 					<Info
@@ -235,8 +234,8 @@ export default function Mission() {
 							top: "calc(100vh / 0.48)",
 							left: "70%",
 							transform: "translateX(-50%)",
-							height: "500px",
-							width: "500px",
+							width: "550px",
+							maxWidth: "40%",
 						}}
 					/>
 				</div>

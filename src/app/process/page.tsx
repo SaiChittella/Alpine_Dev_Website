@@ -179,10 +179,11 @@ export default function Process() {
 						alt=""
 						style={{
 							position: "absolute",
-							top: "calc(100vh / 0.87)",
+							top: "1030px",
 							left: "25%",
 							transform: "translateX(-50%)",
 							width: "35vw",
+							height: "auto",
 						}}
 					/>
 				</div>
@@ -231,48 +232,15 @@ export default function Process() {
 						alt=""
 						style={{
 							position: "absolute",
-							top: "calc(100vh / 0.48)",
+							top: "210vh",
 							left: "70%",
 							transform: "translateX(-50%)",
 							width: "35vw",
+							height: "auto",
 						}}
 					/>
 				</div>
 			</div>
-
-			{/* <div style={{ position: "absolute", top: "calc(100vh / 0.1" }}>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-				<p>asdfsadf</p>
-			</div> */}
 		</div>
 	);
 }

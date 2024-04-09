@@ -130,8 +130,7 @@ export default function Mission() {
 							top: "calc(100vh / 4.5)",
 							left: "75%",
 							transform: "translateX(-50%)",
-							width: "550px",
-							maxWidth: "40%",
+							width: "40vw",
 						}}
 					/>
 				</div>

@@ -82,18 +82,6 @@ const NavBar: React.FC = () => {
 				>
 					About Us
 				</Link>
-				<Link
-					href="/projects"
-					className={`nav-item ${
-						activeTab === "projects" ? "text-green-400" : ""
-					}`}
-					onClick={() => {
-						handleTabChange("projects");
-						scroll("projects");
-					}}
-				>
-					Projects
-				</Link>
 			</div>
 		</nav>
 	);

@@ -8,9 +8,10 @@ const Process: React.FC<ProcessProps> = ({ title, description }) => {
 		<div>
 			<div className="relative text-center">
 				<p
-					className="text-[20px] sm:text-[42px] md:text-[44px] xl:text-[48px]"
+					className="text-[20px] sm:text-[20px] md:text-[30px] xl:text-[48px]"
 					style={{
 						color: "#E2EBE2",
+						// fontSize: "3.4vw",
 					}}
 				>
 					{title}
@@ -21,15 +22,14 @@ const Process: React.FC<ProcessProps> = ({ title, description }) => {
 			</div>
 			<div>
 				<p
-					className="text-[12px] sm:text-[13px] md:text-[14px] xl:text-[16px]"
+					className="text-[13px] sm:text-[14px] md:text-[15px] xl:text-[16px]"
 					style={{
 						position: "relative",
 						textAlign: "center",
 						color: "#FFFFFF",
-						maxWidth: "calc(100% - 2.5rem)",
-						minWidth: "auto",
-						marginLeft: "auto",
-						marginRight: "auto",
+						// fontSize: "1.3vw",
+						width: "45vw",
+						marginLeft: "2%",
 						marginTop: "2vh",
 					}}
 				>

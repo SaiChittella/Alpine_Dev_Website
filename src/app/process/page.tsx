@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import Info from "@/components/Information";
 import VerticalLine from "@/components/Vertical";
 
-export default function Mission() {
+export default function Process() {
 	const client_needs_img = "/imgs/client_needs.png";
 	const web_design_img = "/imgs/design.png";
 	const code_img = "/imgs/build.png";
@@ -15,7 +15,7 @@ export default function Mission() {
 		gsap.fromTo(
 			".left-content",
 			{ x: -1000, opacity: 0.5 },
-			{ x: -350, opacity: 1, duration: 2 }
+			{ x: 0, opacity: 1, duration: 2 }
 		);
 		gsap.fromTo(
 			".right-content",
@@ -51,8 +51,8 @@ export default function Mission() {
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-left-fade-2",
-					start: "top bottom",
-					end: "center center",
+					start: "top 100%",
+					end: "bottom bottom",
 					scrub: true,
 				},
 			}
@@ -78,13 +78,13 @@ export default function Mission() {
 			".content-right-fade-2",
 			{ x: 1000 },
 			{
-				x: 0,
+				x: "5vw",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
 					trigger: ".content-right-fade-2",
-					start: "top bottom",
-					end: "center center",
+					start: "top 100%",
+					end: "bottom bottom",
 					scrub: true,
 				},
 			}
@@ -113,8 +113,9 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 4)",
-						left: "27%",
-						maxWidth: "50%",
+						left: "27.5%",
+						transform: "translateX(-50%)",
+						width: "50vw",
 					}}
 				>
 					<Info
@@ -127,10 +128,11 @@ export default function Mission() {
 						src={client_needs_img}
 						style={{
 							position: "absolute",
-							top: "calc(100vh / 4.5)",
+							top: "200px",
 							left: "75%",
 							transform: "translateX(-50%)",
-							width: "40vw",
+							width: "35vw",
+							height: "auto",
 						}}
 					/>
 				</div>
@@ -146,7 +148,7 @@ export default function Mission() {
 					top="calc(100vh / 1.0099)"
 					left="25%"
 					height="60vh"
-					width="84.5vh"
+					width="52vw"
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
@@ -161,7 +163,7 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.74)",
-						left: "52%",
+						left: "53.5%",
 					}}
 				>
 					<Info
@@ -180,8 +182,7 @@ export default function Mission() {
 							top: "calc(100vh / 0.87)",
 							left: "25%",
 							transform: "translateX(-50%)",
-							width: "550px",
-							maxWidth: "40%",
+							width: "35vw",
 						}}
 					/>
 				</div>
@@ -197,14 +198,14 @@ export default function Mission() {
 					top="calc(100vh / 0.53)"
 					left="25%"
 					height="60vh"
-					width="84.5vh"
+					width="52vw"
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
 					top="calc(100vh / 0.53)"
 					left="25%"
 					height="35vh"
-					width="84.5vh"
+					width="84.5vw"
 					name="border-l border-dashed absolute"
 				/>
 
@@ -213,7 +214,7 @@ export default function Mission() {
 					style={{
 						position: "absolute",
 						top: "calc(100vh / 0.445)",
-						left: "5%",
+						left: "1.5%",
 						maxWidth: "50%",
 					}}
 				>
@@ -233,12 +234,45 @@ export default function Mission() {
 							top: "calc(100vh / 0.48)",
 							left: "70%",
 							transform: "translateX(-50%)",
-							width: "550px",
-							maxWidth: "40%",
+							width: "35vw",
 						}}
 					/>
 				</div>
 			</div>
+
+			{/* <div style={{ position: "absolute", top: "calc(100vh / 0.1" }}>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+				<p>asdfsadf</p>
+			</div> */}
 		</div>
 	);
 }

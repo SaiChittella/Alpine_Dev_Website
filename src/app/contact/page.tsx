@@ -105,7 +105,7 @@ export default function ContactUs() {
 				<p>
 					Here is our email, just in case:{" "}
 					<span className="text-[#1CB47C]">
-						idk_example@gmail.com
+						alpinedevservice@gmail.com
 					</span>
 				</p>
 			</div>

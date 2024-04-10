@@ -1,6 +1,6 @@
 import React from "react";
 
-function MyComponent() {
+function Mission() {
 	const impact_img = "/imgs/impact.png";
 	const individualize_img = "/imgs/individualize.png";
 	const innovate_img = "/imgs/innovate.png";
@@ -46,7 +46,7 @@ function MyComponent() {
 						margin: "5px 10px 10px 10px",
 						borderRadius: "25px",
 						position: "relative",
-						top: "10px", // Moved the first box 50px down
+						top: "10px", // first box
 					}}
 				>
 					<img
@@ -97,7 +97,7 @@ function MyComponent() {
 						margin: "5px 10px 10px 10px",
 						borderRadius: "25px",
 						position: "relative",
-						top: "10px", // Moved the second box 50px down
+						top: "10px", // second box
 					}}
 				>
 					<img
@@ -148,7 +148,7 @@ function MyComponent() {
 						margin: "5px 10px 10px 10px",
 						borderRadius: "25px",
 						position: "relative",
-						top: "10px", // Moved the third box 50px down
+						top: "10px", // third box
 					}}
 				>
 					<img
@@ -199,7 +199,7 @@ function MyComponent() {
 						backgroundColor: "white",
 						borderRadius: "50%",
 						position: "absolute",
-						top: "160px", // Moved the first circle 200px down
+						top: "160px", // first circle
 						right: "1015px",
 						zIndex: 1,
 					}}
@@ -211,7 +211,7 @@ function MyComponent() {
 						backgroundColor: "white",
 						borderRadius: "50%",
 						position: "absolute",
-						top: "160px", // Moved the second circle 200px down
+						top: "160px", // second circle
 						right: "600px",
 					}}
 				></div>
@@ -222,7 +222,7 @@ function MyComponent() {
 						backgroundColor: "white",
 						borderRadius: "50%",
 						position: "absolute",
-						top: "160px", // Moved the third circle 200px down
+						top: "160px", // third circle
 						right: "185px",
 					}}
 				></div>

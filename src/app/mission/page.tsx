@@ -231,4 +231,4 @@ function Mission() {
 	);
 }
 
-export default MyComponent;
+export default Mission;

@@ -26,7 +26,7 @@ const Rectangle: React.FC<RectangleProps> = ({
 					borderRadius: "25px",
 					position: "absolute",
 					left: left,
-					top: "350px",
+					top: "45%",
 				}}
 			>
 				<img

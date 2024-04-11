@@ -21,8 +21,8 @@ export default function ContactUs() {
 	};
 
 	const handleSubmit = () => {
-		// This is just a placeholder, we will need to change this so that it acc sends emails to our email
-		alert("Submitted!" + name + email + message);
+		// Need to change this....
+		alert("Sent!");
 	};
 
 	return (

@@ -1,8 +1,8 @@
 import Rectangle from "./rectangle";
 export default function Mission() {
-	const innovate_img = "/imgs/innovate_real.png";
-	const individualize_img = "/imgs/individualize_real.png";
-	const impact_img = "/imgs/impact_real.png";
+	const innovate_img = "/imgs/innovate_real.svg";
+	const individualize_img = "/imgs/individualize_real.svg";
+	const impact_img = "/imgs/impact_real.svg";
 
 	return (
 		<div className="w-full h-auto">

@@ -29,31 +29,42 @@ const Rectangle: React.FC<RectangleProps> = ({
 					top: "45%",
 				}}
 			>
-				<img
-					src={picture}
-					alt="Impact"
-					style={{
-						width: "15vw",
-						height: "25vh",
-						borderRadius: "50%",
-						top: "-30%",
-						left: "25%",
-						position: "absolute",
-						backgroundColor: "white",
-						objectFit: "cover",
-						zIndex: 2,
-					}}
-				/>
+				<div>
+					<div
+						style={{
+							width: "15vw",
+							height: "15vw",
+							backgroundColor: "#E2EBE2",
+							borderRadius: "50%",
+							position: "relative",
+							marginTop: "-30%",
+							left: "25%",
+							zIndex: 1,
+						}}
+					/>
+
+					<img
+						src={picture}
+						style={{
+							width: "11vw",
+							height: "11vw",
+							marginTop: "-46%",
+							left: "34%",
+							position: "relative",
+							zIndex: 2,
+						}}
+					/>
+				</div>
 
 				<div
 					className="flex relative font-bold text-[3.5vw] items-center justify-center"
-					style={{ top: "20%" }}
+					style={{ top: "12%" }}
 				>
 					<p>{title}</p>
 				</div>
 				<div
-					className="flex relative text-[1.3vw] items-center justify-center w-[30vw]"
-					style={{ top: "20%", textAlign: "center" }}
+					className="flex relative text-[1.3vw] items-center justify-center w-[29vw]"
+					style={{ top: "12%", textAlign: "center", left: "2%" }}
 				>
 					<p>{description}</p>
 				</div>

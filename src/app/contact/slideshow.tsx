@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const images = [
 	"imgs/projects/skyline_theater.png",
 	"imgs/projects/home_page.png",
+	"imgs/projects/clean_climate.png",
 ];
 
 const Slideshow: React.FC = () => {

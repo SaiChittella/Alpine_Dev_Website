@@ -3,6 +3,8 @@ interface RectangleProps {
 	width: string;
 	left: string;
 	picture: string;
+	pictureLeft: string;
+	pictureTop: string;
 	title: string;
 	description: string;
 }
@@ -12,6 +14,8 @@ const Rectangle: React.FC<RectangleProps> = ({
 	width,
 	left,
 	picture,
+	pictureLeft,
+	pictureTop,
 	title,
 	description,
 }) => {
@@ -21,7 +25,7 @@ const Rectangle: React.FC<RectangleProps> = ({
 				style={{
 					width: width,
 					height: height,
-					backgroundColor: "#0D150D",
+					backgroundColor: "#141C14",
 					margin: "5px 10px 10px 10px",
 					borderRadius: "25px",
 					position: "absolute",
@@ -48,8 +52,8 @@ const Rectangle: React.FC<RectangleProps> = ({
 						style={{
 							width: "11vw",
 							height: "11vw",
-							marginTop: "-46%",
-							left: "34%",
+							marginTop: pictureTop,
+							left: pictureLeft,
 							position: "relative",
 							zIndex: 2,
 						}}

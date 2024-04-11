@@ -26,6 +26,8 @@ export default function Mission() {
 				width="30vw"
 				left="2%"
 				picture={innovate_img}
+				pictureLeft="33%"
+				pictureTop="-46%"
 				title="Innovate"
 				description="At our core, we're innovators. We thrive on pushing
 						boundaries, exploring new ideas, and finding creative
@@ -39,6 +41,8 @@ export default function Mission() {
 				width="30vw"
 				left="34.5%"
 				picture={impact_img}
+				pictureLeft="31%"
+				pictureTop="-44%"
 				title="Impact"
 				description="Our mission is to make a lasting impact. We believe in
 						leveraging technology to drive positive change and
@@ -52,6 +56,8 @@ export default function Mission() {
 				width="30vw"
 				left="67%"
 				picture={individualize_img}
+				pictureLeft="32%"
+				pictureTop="-46%"
 				title="Individualize"
 				description="We understand that every client is unique. That's why we
 						take a personalized approach to every project, tailoring

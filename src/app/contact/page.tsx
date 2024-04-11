@@ -3,7 +3,6 @@ import Textbox from "@/components/Textbox";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Slideshow from "./slideshow";
-import HandleSubmit from "./handleSubmit";
 
 export default function ContactUs() {
 	const [name, setName] = useState("");
@@ -34,7 +33,7 @@ export default function ContactUs() {
 				body: JSON.stringify({ name, email, message }),
 			});
 			if (response.ok) {
-				console.log("Email sent successfully!");
+				alert("Email sent successfully!");
 			} else {
 				console.error("Failed to send email:", response.statusText);
 			}

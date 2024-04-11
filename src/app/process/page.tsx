@@ -1,3 +1,6 @@
+// Need to make the styling responsive for the imgs using vh and vw to make sure that the imgs are appearing relative to the screen size
+// Change up font size a little to make it bigger on larger screens
+
 "use client";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -96,10 +99,12 @@ export default function Process() {
 			<div>
 				<div className="processTitle">
 					<p
-						className="max-w-full text-center font-bold text-[40px] sm:text-[50px] md:text-[65px] xl:text-[75px]"
+						className="max-w-full text-center font-bold"
+						// text-[40px] sm:text-[50px] md:text-[65px] xl:text-[75px]
 						style={{
 							color: "#1CB47C",
 							position: "absolute",
+							fontSize: "5vw",
 							top: "calc(100vh / 12)",
 							left: "50%",
 							transform: "translateX(-50%)",
@@ -123,16 +128,48 @@ export default function Process() {
 						description="To understand client needs, we take this very seriously. To ensure that our clients are getting exactly what they want and deserve, we will either set up a meeting via Zoom, or shoot them an email, where we will take diligent notes on exactly what it is that they want in their website."
 					/>
 				</div>
+
 				<div className="right-content items-center">
 					<img
 						src={client_needs_img}
 						style={{
 							position: "absolute",
-							top: "200px",
 							left: "75%",
+							transform: "translateX(-50%) translateY(50%)",
+							width: "35vw",
+							height: "55vh",
+							objectFit: "contain",
+						}}
+					/>
+				</div>
+				<div className="items-center">
+					<img
+						className="content-left-fade"
+						src={web_design_img}
+						style={{
+							position: "absolute",
+							left: "25%",
+							top: "120%",
 							transform: "translateX(-50%)",
 							width: "35vw",
-							height: "auto",
+							height: "55vh",
+							objectFit: "contain",
+						}}
+					/>
+				</div>
+				<div className="items-center">
+					<img
+						className="content-right-fade-2"
+						src={code_img}
+						alt=""
+						style={{
+							position: "absolute",
+							left: "70%",
+							top: "215%",
+							transform: "translateX(-50%)",
+							width: "35vw",
+							height: "55vh",
+							objectFit: "contain",
 						}}
 					/>
 				</div>
@@ -172,22 +209,6 @@ export default function Process() {
 					/>
 				</div>
 
-				<div>
-					<img
-						className="content-left-fade"
-						src={web_design_img}
-						alt=""
-						style={{
-							position: "absolute",
-							top: "1030px",
-							left: "25%",
-							transform: "translateX(-50%)",
-							width: "35vw",
-							height: "auto",
-						}}
-					/>
-				</div>
-
 				<VerticalLine
 					top="calc(100vh / 0.63)"
 					left="77%"
@@ -222,22 +243,6 @@ export default function Process() {
 					<Info
 						title="Build"
 						description="Now, we build. Using our design plan and the popular frameworks Next.JS and TailwindCSS, we will build the website. We will send the client updates on the website as we build it, and once it is finished, we will send them the final product, where they can request any changes that they would like."
-					/>
-				</div>
-
-				<div>
-					<img
-						className="content-right-fade-2"
-						src={code_img}
-						alt=""
-						style={{
-							position: "absolute",
-							top: "210vh",
-							left: "70%",
-							transform: "translateX(-50%)",
-							width: "35vw",
-							height: "auto",
-						}}
 					/>
 				</div>
 			</div>

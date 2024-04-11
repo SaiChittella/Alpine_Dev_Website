@@ -40,8 +40,8 @@ function Mission() {
 			>
 				<div
 					style={{
-						width: "400px",
-						height: "400px",
+						width: "33vw",
+						height: "80vh",
 						backgroundColor: "#0D150D",
 						margin: "5px 10px 10px 10px",
 						borderRadius: "25px",

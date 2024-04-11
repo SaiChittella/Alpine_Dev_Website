@@ -52,12 +52,10 @@ const Rectangle: React.FC<RectangleProps> = ({
 					<p>{title}</p>
 				</div>
 				<div
-					className="flex relative text-[1.4vw] items-center justify-center w-[30vw]"
-					style={{ top: "20%", textAlign: "center"}}
+					className="flex relative text-[1.3vw] items-center justify-center w-[30vw]"
+					style={{ top: "20%", textAlign: "center" }}
 				>
-					<p>
-						{description}
-					</p>
+					<p>{description}</p>
 				</div>
 			</div>
 		</div>

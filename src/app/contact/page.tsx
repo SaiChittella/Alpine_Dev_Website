@@ -1,7 +1,7 @@
 "use client";
 import Textbox from "@/components/Textbox";
 import { useState } from "react";
-
+import Slideshow from "./slideshow";
 export default function ContactUs() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -52,14 +52,15 @@ export default function ContactUs() {
 				</p>
 			</div>
 			<div
-				className="absolute bg-[#152115] w-3/5 mx-auto h-2/3"
+				className="absolute w-3/5 mx-auto h-2/3"
 				style={{
 					top: "calc(100vh / 3.5)",
 					left: "67%",
 					transform: "translateX(-50%)",
-					borderRadius: "3%",
 				}}
-			/>
+			>
+				<Slideshow />
+			</div>
 			<div className="max-w-full">
 				<Textbox
 					divTop="calc(100vh / 3.2)"
@@ -126,7 +127,7 @@ export default function ContactUs() {
 				className="pb-5"
 				style={{
 					position: "absolute",
-					top: "calc(100vh / 0.95)",
+					top: "110%",
 					left: "25%",
 					fontSize: "16px",
 				}}
@@ -138,12 +139,12 @@ export default function ContactUs() {
 				<img
 					src={arrow}
 					alt=""
-					height="100px"
-					width="100px"
+					height="100vh"
+					width="100vw"
 					style={{
-						position: "absolute",
+						position: "relative",
 						left: "105%",
-						top: "-180%",
+						marginTop: "-25%",
 					}}
 				/>
 			</div>

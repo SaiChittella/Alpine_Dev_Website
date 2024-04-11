@@ -3,11 +3,13 @@ import Textbox from "@/components/Textbox";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import Slideshow from "./slideshow";
+import HandleSubmit from "./handleSubmit";
 
 export default function ContactUs() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+
 	const arrow = "/imgs/arrow.png";
 
 	const handleNameChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -22,9 +24,23 @@ export default function ContactUs() {
 		setMessage(e.target.value);
 	};
 
-	const handleSubmit = () => {
-		// Need to change this....
-		alert("Sent!");
+	const handleSubmit = async () => {
+		try {
+			const response = await fetch("/api/sendEmail", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ name, email, message }),
+			});
+			if (response.ok) {
+				console.log("Email sent successfully!");
+			} else {
+				console.error("Failed to send email:", response.statusText);
+			}
+		} catch (error) {
+			console.error("Failed to send email:", error);
+		}
 	};
 
 	useEffect(() => {
@@ -45,7 +61,6 @@ export default function ContactUs() {
 				backFadeElement,
 				{
 					opacity: 0,
-					// y: "45vh",
 				},
 				{
 					opacity: 1,

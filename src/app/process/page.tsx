@@ -175,21 +175,24 @@ export default function Process() {
 				</div>
 
 				<VerticalLine
-					top="calc(100vh / 2.07)"
+					// top="calc(100vh / 2.07)"
+					top="49%"
 					left="25%"
 					height="50vh"
 					width=""
 					name="border-l border-dashed absolute"
 				/>
 				<VerticalLine
-					top="calc(100vh / 1.0099)"
+					// top="calc(100vh / 1.0099)"
+					top="99%"
 					left="25%"
 					height="60vh"
 					width="52vw"
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
-					top="calc(100vh / 1.01)"
+					// top="calc(100vh / 1.01)"
+					top="99%"
 					left="77%"
 					height="35vh"
 					width=""
@@ -210,21 +213,24 @@ export default function Process() {
 				</div>
 
 				<VerticalLine
-					top="calc(100vh / 0.63)"
+					// top="calc(100vh / 0.63)"
+					top="158.5%"
 					left="77%"
 					height="30vh"
 					width=""
 					name="border-l border-dashed absolute"
 				/>
 				<VerticalLine
-					top="calc(100vh / 0.53)"
+					// top="calc(100vh / 0.53)"
+					top="188.5%"
 					left="25%"
 					height="60vh"
 					width="52vw"
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
-					top="calc(100vh / 0.53)"
+					// top="calc(100vh / 0.53)"
+					top="188.5%"
 					left="25%"
 					height="35vh"
 					width="84.5vw"

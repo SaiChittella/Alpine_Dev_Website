@@ -49,12 +49,12 @@ export default function ContactUs() {
 		gsap.fromTo(
 			".slide-right",
 			{ x: 1000, opacity: 0.5 },
-			{ x: 0, opacity: 1, duration: 2, ease: "power2.inOut" }
+			{ x: "0%", opacity: 1, duration: 2, ease: "power2.inOut" }
 		);
 		gsap.fromTo(
 			".slide-left",
-			{ x: -1000, opacity: 0.5 },
-			{ x: 0, opacity: 1, duration: 2, ease: "power1.inOut" }
+			{ x: "-100%", opacity: 0.5 },
+			{ x: "0%", opacity: 1, duration: 2, ease: "power1.inOut" }
 		);
 		if (backFadeElement) {
 			gsap.fromTo(

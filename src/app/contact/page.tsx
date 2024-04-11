@@ -1,7 +1,9 @@
 "use client";
 import Textbox from "@/components/Textbox";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import gsap from "gsap";
 import Slideshow from "./slideshow";
+
 export default function ContactUs() {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
@@ -25,9 +27,39 @@ export default function ContactUs() {
 		alert("Sent!");
 	};
 
+	useEffect(() => {
+		const backFadeElement = document.querySelector(".back-fade");
+
+		gsap.fromTo(
+			".slide-right",
+			{ x: 1000, opacity: 0.5 },
+			{ x: 0, opacity: 1, duration: 2, ease: "power2.inOut" }
+		);
+		gsap.fromTo(
+			".slide-left",
+			{ x: -1000, opacity: 0.5 },
+			{ x: 0, opacity: 1, duration: 2, ease: "power1.inOut" }
+		);
+		if (backFadeElement) {
+			gsap.fromTo(
+				backFadeElement,
+				{
+					opacity: 0,
+					// y: "45vh",
+				},
+				{
+					opacity: 1,
+					x: "-50%",
+					duration: 4,
+					ease: "power2.inOut",
+				}
+			);
+		}
+	}, []);
+
 	return (
-		<div className="">
-			<div className="flex-grow max-w-full text-center text-[13px] sm:text-[15px] md:text-[17px] xl:text-[19px]">
+		<div>
+			<div className="slide-right flex-grow max-w-full text-center text-[13px] sm:text-[15px] md:text-[17px] xl:text-[19px]">
 				<p
 					style={{
 						position: "absolute",
@@ -52,7 +84,7 @@ export default function ContactUs() {
 				</p>
 			</div>
 			<div
-				className="absolute w-3/5 mx-auto h-2/3"
+				className="back-fade absolute w-3/5 mx-auto h-2/3"
 				style={{
 					top: "calc(100vh / 3.5)",
 					left: "67%",
@@ -61,7 +93,7 @@ export default function ContactUs() {
 			>
 				<Slideshow />
 			</div>
-			<div className="max-w-full">
+			<div className="slide-left max-w-full">
 				<Textbox
 					divTop="calc(100vh / 3.2)"
 					divLeft="4%"
@@ -92,36 +124,35 @@ export default function ContactUs() {
 					value={message}
 					onChange={handleMessageChange}
 				/>
+				<div
+					style={{
+						position: "absolute",
+						top: "calc(100vh / 1.13)",
+						left: "4%",
+						fontSize: "15px",
+						width: "30vw",
+					}}
+				>
+					<p>
+						Here is our email, just in case:{" "}
+						<span className="text-[#1CB47C]">
+							alpinedevservice@gmail.com
+						</span>
+					</p>
+				</div>
+				<button
+					className="py-1.5 px-9 bg-[#3A6436] rounded-full text-H4 font-bold"
+					onClick={handleSubmit}
+					style={{
+						position: "absolute",
+						top: "94vh",
+						left: "4%",
+						fontSize: "18px",
+					}}
+				>
+					Send
+				</button>
 			</div>
-
-			<div
-				style={{
-					position: "absolute",
-					top: "calc(100vh / 1.13)",
-					left: "4%",
-					fontSize: "15px",
-					width: "30vw",
-				}}
-			>
-				<p>
-					Here is our email, just in case:{" "}
-					<span className="text-[#1CB47C]">
-						alpinedevservice@gmail.com
-					</span>
-				</p>
-			</div>
-			<button
-				className="py-1.5 px-9 bg-[#3A6436] rounded-full text-H4 font-bold"
-				onClick={handleSubmit}
-				style={{
-					position: "absolute",
-					top: "94vh",
-					left: "4%",
-					fontSize: "18px",
-				}}
-			>
-				Send
-			</button>
 
 			<div
 				className="pb-5"

@@ -63,7 +63,6 @@ export default function ContactUs() {
 				},
 				{
 					opacity: 1,
-					x: "-50%",
 					duration: 4,
 					ease: "power2.inOut",
 				}
@@ -184,12 +183,12 @@ export default function ContactUs() {
 				<img
 					src={arrow}
 					alt=""
-					height="100vh"
-					width="100vw"
+					height="70vh"
+					width="70vw"
 					style={{
 						position: "relative",
 						left: "105%",
-						marginTop: "-25%",
+						marginTop: "-8vh",
 					}}
 				/>
 			</div>

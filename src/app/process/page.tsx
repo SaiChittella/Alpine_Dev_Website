@@ -15,12 +15,12 @@ export default function Process() {
 		gsap.fromTo(
 			".left-content",
 			{ x: -1000, opacity: 0.5 },
-			{ x: "0%", opacity: 1, duration: 2 }
+			{ x: "-50%", opacity: 1, duration: 2 }
 		);
 		gsap.fromTo(
 			".right-content",
 			{ x: 1000, opacity: 0.5 },
-			{ x: "0%", opacity: 1, duration: 2 }
+			{ x: "-15%", opacity: 1, duration: 2 }
 		);
 	}, []);
 
@@ -31,7 +31,7 @@ export default function Process() {
 			".content-left-fade",
 			{ x: -1000, opacity: 0 },
 			{
-				x: "0%",
+				x: "0vw",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
@@ -62,7 +62,7 @@ export default function Process() {
 			".content-right-fade",
 			{ x: 1000, opacity: 0 },
 			{
-				x: "0%",
+				x: "0vw",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
@@ -115,7 +115,6 @@ export default function Process() {
 						position: "absolute",
 						top: "calc(100vh / 4)",
 						left: "27.5%",
-						transform: "translateX(-50%)",
 						width: "50vw",
 					}}
 				>
@@ -131,7 +130,7 @@ export default function Process() {
 						style={{
 							position: "absolute",
 							left: "75%",
-							transform: "translateX(-50%) translateY(50%)",
+							transform: "translateY(50%)",
 							width: "35vw",
 							height: "55vh",
 							objectFit: "contain",

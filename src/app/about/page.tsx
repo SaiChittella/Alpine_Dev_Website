@@ -3,7 +3,7 @@ import AboutUsSection from "./AboutUsSection";
 export default function AboutUs() {
 	const lalith = {
 		name: "Lalith",
-		position: "Co-Founder",
+		position: "Co-Founder & CTO",
 		paragraph: "*Insert Text Here*",
 		urls: [
 			"imgs/about/lalith/tabla.svg",
@@ -14,7 +14,7 @@ export default function AboutUs() {
 	};
 	const sai = {
 		name: "Sai",
-		position: "Co-Founder",
+		position: "Co-Founder & CEO",
 		paragraph: "*Insert Text Here*",
 		urls: [
 			"imgs/about/sai/gym.svg",
@@ -25,18 +25,18 @@ export default function AboutUs() {
 	};
 	const tanush = {
 		name: "Tanush",
-		position: "Senior Developer",
+		position: "Senior Developer & CFO",
 		paragraph: "*Insert Text Here*",
 		urls: [
 			"imgs/about/tanush/chess.svg",
 			"imgs/about/coding.svg",
-			"imgs/about/coding.svg",
+			"imgs/about/tanush/basketball.svg",
 		],
 		picture: "imgs/about/tanush/Tanush.jpg",
 	};
 	const logan = {
 		name: "Logan",
-		position: "Head of Design",
+		position: "Head of Design & CIO",
 		paragraph: "*Insert Text Here*",
 		urls: [
 			"imgs/about/logan/basketball.svg",

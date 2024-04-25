@@ -1,6 +1,3 @@
-// Need to make the styling responsive for the imgs using vh and vw to make sure that the imgs are appearing relative to the screen size
-// Change up font size a little to make it bigger on larger screens
-
 "use client";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -18,12 +15,12 @@ export default function Process() {
 		gsap.fromTo(
 			".left-content",
 			{ x: -1000, opacity: 0.5 },
-			{ x: 0, opacity: 1, duration: 2 }
+			{ x: "0%", opacity: 1, duration: 2 }
 		);
 		gsap.fromTo(
 			".right-content",
 			{ x: 1000, opacity: 0.5 },
-			{ x: 0, opacity: 1, duration: 2 }
+			{ x: "0%", opacity: 1, duration: 2 }
 		);
 	}, []);
 
@@ -34,7 +31,7 @@ export default function Process() {
 			".content-left-fade",
 			{ x: -1000, opacity: 0 },
 			{
-				x: 0,
+				x: "0%",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
@@ -49,7 +46,7 @@ export default function Process() {
 			".content-left-fade-2",
 			{ x: -1000, opacity: 0 },
 			{
-				x: 5,
+				x: "5%",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
@@ -65,7 +62,7 @@ export default function Process() {
 			".content-right-fade",
 			{ x: 1000, opacity: 0 },
 			{
-				x: 0,
+				x: "0%",
 				opacity: 1,
 				duration: 2,
 				scrollTrigger: {
@@ -100,7 +97,6 @@ export default function Process() {
 				<div className="processTitle">
 					<p
 						className="max-w-full text-center font-bold"
-						// text-[40px] sm:text-[50px] md:text-[65px] xl:text-[75px]
 						style={{
 							color: "#1CB47C",
 							position: "absolute",
@@ -175,7 +171,6 @@ export default function Process() {
 				</div>
 
 				<VerticalLine
-					// top="calc(100vh / 2.07)"
 					top="49%"
 					left="25%"
 					height="50vh"
@@ -183,7 +178,6 @@ export default function Process() {
 					name="border-l border-dashed absolute"
 				/>
 				<VerticalLine
-					// top="calc(100vh / 1.0099)"
 					top="99%"
 					left="25%"
 					height="60vh"
@@ -191,7 +185,6 @@ export default function Process() {
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
-					// top="calc(100vh / 1.01)"
 					top="99%"
 					left="77%"
 					height="35vh"
@@ -213,7 +206,6 @@ export default function Process() {
 				</div>
 
 				<VerticalLine
-					// top="calc(100vh / 0.63)"
 					top="158.5%"
 					left="77%"
 					height="30vh"
@@ -221,7 +213,6 @@ export default function Process() {
 					name="border-l border-dashed absolute"
 				/>
 				<VerticalLine
-					// top="calc(100vh / 0.53)"
 					top="188.5%"
 					left="25%"
 					height="60vh"
@@ -229,7 +220,6 @@ export default function Process() {
 					name="border-t border-dashed absolute"
 				/>
 				<VerticalLine
-					// top="calc(100vh / 0.53)"
 					top="188.5%"
 					left="25%"
 					height="35vh"

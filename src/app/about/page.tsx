@@ -10,7 +10,7 @@ export default function AboutUs() {
 			"imgs/about/coding.svg",
 			"imgs/about/lalith/singing.svg",
 		],
-		picture: "imgs/about/lalith/lalith.jpeg",
+		picture: "imgs/about/lalith/lalith.jpg",
 	};
 	const sai = {
 		name: "Sai",
@@ -49,6 +49,11 @@ export default function AboutUs() {
 	return (
 		<>
 			<AboutUsSection
+				pfp={lalith.picture}
+				URLs={lalith.urls}
+				paragraph={lalith.paragraph}
+			/>
+			<AboutUsSection
 				pfp={sai.picture}
 				URLs={sai.urls}
 				paragraph={sai.paragraph}
@@ -62,11 +67,6 @@ export default function AboutUs() {
 				pfp={logan.picture}
 				URLs={logan.urls}
 				paragraph={logan.paragraph}
-			/>
-			<AboutUsSection
-				pfp={lalith.picture}
-				URLs={lalith.urls}
-				paragraph={lalith.paragraph}
 				scrollArrow={false}
 			/>
 		</>
